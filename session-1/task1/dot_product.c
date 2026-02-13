@@ -15,5 +15,14 @@
     Store your answer in d
     print your final answer
     */
+
+    // formulat s = sum_k (a_k.b_k)
+    d = 0;
+    for(int i=0; i<5; i++){
+      d += a[i]*b[i];
+    }
+
+    printf("dot product: %f\n", d);
+
     return 0;
  }
