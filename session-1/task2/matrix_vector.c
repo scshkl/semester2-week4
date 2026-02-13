@@ -31,7 +31,6 @@
       }
    }
 
-    // c[k] = sum_j (a_[k][j]x[b][j])
    for(int i=0; i<4; i++){
       printf("%.2f ", c[i]);
    }
