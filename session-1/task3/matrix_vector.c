@@ -30,10 +30,10 @@ int main( void ) {
       b[i] = 1;
     }
     */
-    a = (float **) calloc(n, sizeof(float *));
+    a = calloc(n, sizeof(float *));
 
     for(int i=0; i<n; i++){
-        *(a+i) = (float *) calloc(n, sizeof(float));
+        *(a+i) = calloc(n, sizeof(float));
     }
 
     for(int i=0; i<n; i++){
