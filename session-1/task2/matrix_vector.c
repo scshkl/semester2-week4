@@ -16,5 +16,24 @@
     Store your answer in vector c
     Print your final answer
     */
+
+    for(int i=0; i<4; i++){
+      for(int j=0; j<4; j++){
+         a[i][j]= 1;
+      }
+      b[i] = 1;
+    }
+
+   for(int i=0; i<4; i++){
+      c[i] = 0;
+      for(int j=0; j<4; j++){
+         c[i] += a[i][j] * b[j];
+      }
+   }
+
+    // c[k] = sum_j (a_[k][j]x[b][j])
+   for(int i=0; i<4; i++){
+      printf("%.2f ", c[i]);
+   }
     return 0;
  }
