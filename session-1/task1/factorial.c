@@ -6,7 +6,7 @@
  #include <stdio.h>
 
  int main( void ) {
-    int f[20];
+    long int f[20];
 
     /*
     Code to compute the factorial of each array index
@@ -28,7 +28,7 @@
    }
 
    for (int i=0; i<20; i++){
-      printf("%d\t", f[i]);
+      printf("%ld\n", f[i]);
    }
 
     return 0;
