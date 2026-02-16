@@ -1,6 +1,12 @@
 
 #include <stdio.h>
 
+// Modify this code so that 'n' is a command-line argument
+// 
+// You will need to dynamically allocate the matrices: mat1, mat2, sum
+// You will need to modify the code so that matrix dimension is variable n
+// remember to free dynamicaly allocated memory 
+
 int main( void ) {
     int mat1[5][5];
     int mat2[5][5];

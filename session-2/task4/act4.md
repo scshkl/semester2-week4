@@ -1,29 +1,17 @@
-# Command line arguments and dynamic memory allocation
+# fgets() and sscanf()
+
+1 Write a program using `scanf()` to read 2 integer values from user input in the form `3 + 4 =`
+
+- we should use 2 integer variables to store the integer data
+- we can provide a format string the matches the expected form of the input
+    - eg. if we expected user input  
 
 
+2 Write the same program using `fgets()` and `sscanf()`
+- similar code can be used for `sscanf()` as `scanf()`
 
-1. **Using atoi() and atof()**
-
-
-
-The program cmd\_line\_data.c is designed to accept 3 command line arguments of different type.
-
-Add code to properly handle the specified data types.
-
-Implement a solution in Python and compare the code.
-
-
-
-2. **Vector and matrix operations**
-
-
-
-Considering the examples from session 1 of this week choose one vector and one matrix task
-and modify the examples to use a command line argument that sets the size of the vector and matrix.
-
-- The command line argument can define the vector (or matrix) size N
-- Modify the code to dynamically allocate the vector or matrix
-- For good memory management deallocate memory at the end before exiting the program
-
-There are two example solutions provided in the repository for this session that you can use if you wish.
-
+3 Generalise the code to read the operator as a character
+- ie. read the `+` as a char variable
+- you can now vary the operator as well as the values
+    - ie. `3 - 2`, `4 * 6`
+- you now have a model for starting a small calculator application

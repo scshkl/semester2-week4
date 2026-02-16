@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// modify this code so that 'n' is a command-line argument
+// we can then run the code for any chosen vector size
+
 int main( void ) {
     int n=10;
     float *vec1 = calloc(n,sizeof(float));
