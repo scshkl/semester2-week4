@@ -13,10 +13,23 @@
 int main( int argc, char **argv ) {
 
     char sentence[200]="";
+    char *ptr;
 
     /*
     Your code
     */
+    for( int k=1; k<argc; ++k ) {
+        strcat(sentence, argv[k]);
+    }
+    
+    sentence[strcspn(sentence, "\n")] = '\0';
+    ptr = strstr(sentence, "k");
+    
+    if (ptr)
+        printf("%c is found in %s at position %td\n", 'k', sentence, ptr-sentence);
+    else
+        printf("not found\n");
+
 
     return 0;
 }

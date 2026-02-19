@@ -16,10 +16,31 @@
 
 int main( int argc, char **argv ) {
     double Pi = 3.1415926535897932;
+    double pi_n = 1.0;
 
     /*
     Your code
     */
+    if (argc > 1 && atoi(argv[1]) <= 0)
+        return 1;
+
+    int n = atoi(argv[1]);
+
+    for(int i=2; i<=n; i++){
+        if (i % 2 == 0){
+            pi_n -= (1.0/(i+1));
+            printf("%d: %lf\n", i, pi_n);
+        }
+        else
+        {
+            pi_n += (1.0/(i+1));
+            printf("%d: %lf\n", i, pi_n);
+        }
+    }
+
+    pi_n = 4 * pi_n;
+    printf("pi_n: %lf, abs(Pi-pi_n):%lf\n", pi_n, fabs(Pi-pi_n));
+
 
     return 0;
 }
